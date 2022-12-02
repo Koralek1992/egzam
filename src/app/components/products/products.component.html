@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>List of Products</mat-card-title>
+  <mat-card-content>
+    <mat-list role="list">
+      <h1>Products</h1>
+      <mat-list-item role="listitem" *ngFor="let item of list$ | async"><a href="list/1"><img src="{{item.image}}" width="20px"> {{item.title}} {{item.price}}</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+<button><a href="form">Go to the form</a></button>
+
+
+
